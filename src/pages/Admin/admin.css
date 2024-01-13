@@ -1,0 +1,68 @@
+/* Admin.css */
+
+.admin {
+
+    margin: 0 auto;
+  }
+  
+  .tabs {
+    display: flex;
+    margin-top: 10vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 1.2vmax;
+
+  }
+  
+  .tabs div {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 0 0;
+    background-color: #ffffff;
+    font-family: 'montserrat';
+    font-size: 1.2vmax;
+  }
+  
+  .tabs div.active {
+    background-color: #92E3A9;
+    border: 0.2vmax solid #92E3A9;
+    font-family: 'montserrat';
+  }
+  
+  .content {
+    display: none;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 0 0 5px 5px; */
+    background-color: #ffffff;
+  }
+  
+  .content.show {
+    display: block;
+  }
+
+  .data-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .data-table th, .data-table td {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 0.5vmax;
+  }
+  
+  .data-table th {
+    background-color: #92E3A9;
+    font-family: 'montserrat';
+
+  }
+  .data-table{
+    color:rgb(0, 0, 0);
+    font-size: 1vmax;
+    font-family: 'montserrat';
+    font-weight: 500;
+  }

@@ -1,0 +1,43 @@
+.hwrap {
+  background-color: rgb(195, 246, 210);
+  display:flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* (A) FORCE ALL ITEMS INTO SINGLE ROW */
+.hmove {
+    display: flex;
+    gap: 20vw;
+  }
+  
+  .hitem {
+
+    width: 30%;
+    /* height: 10%; */
+    flex-shrink: 0;
+    overflow: hidden; /* Ensure the image doesn't overflow the div */
+    
+  }
+  
+  /* (B) MOVE ITEMS FROM RIGHT TO LEFT */
+  /* first item = 0, fourth item = -300% */
+  @keyframes tickerh {
+    0% {
+      transform: translateX(100%) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-580%) rotate(0deg);
+    }
+  }
+  
+  .hmove {
+    animation: tickerh linear 25s infinite;
+  }
+  
+  .hmove:hover {
+    animation-play-state: paused;
+  }
+  .joinbutton:hover {
+    background-color: #003f4f;
+  }
